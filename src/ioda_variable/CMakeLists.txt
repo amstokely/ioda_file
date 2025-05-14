@@ -1,0 +1,16 @@
+set(ioda_variable_test_SOURCES
+        "ioda_variable.test.cpp"
+)
+set(ioda_variable_test_INCLUDE_DIRECTORIES
+        "${CMAKE_CURRENT_SOURCE_DIR}"
+        "${CMAKE_BINARY_DIR}/generated"
+)
+set(ioda_variable_test_LIBRARY_DEPENDENCIES
+        ioda_file
+        GTest::gtest_main
+)
+add_cpp_test(ioda_variable_test
+        "${ioda_variable_test_SOURCES}"
+        "${ioda_variable_test_INCLUDE_DIRECTORIES}"
+        "${ioda_variable_test_LIBRARY_DEPENDENCIES}"
+)

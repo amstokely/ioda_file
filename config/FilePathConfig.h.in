@@ -1,0 +1,6 @@
+#ifndef FILEPATHCONFIG_H_IN
+#define FILEPATHCONFIG_H_IN
+#pragma once
+    static constexpr const char* IODA_SCHEMA_YAML = "@IODA_SCHEMA_YAML@";
+
+#endif //FILEPATHCONFIG_H_IN
