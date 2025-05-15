@@ -4,7 +4,7 @@ enable_testing()
 include(FetchContent)
 
 project(ioda-file LANGUAGES CXX)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 FETCHCONTENT_DECLARE(
         googletest
